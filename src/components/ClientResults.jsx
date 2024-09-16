@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 export const ClientResults = () => {
   const { t } = useTranslation();
   return (
-    <div id="keysi" className="bg-repeat-y bg-center md:bg-clients lg:bg-clients">
+    <div id="keysi" className="bg-repeat-y bg-center bg-clients">
       <div className="flex flex-col items-center justify-between">
         <div className="container mb-10">
           <div className="w-full p-8 flex flex-col items-center justify-center">
@@ -30,8 +30,12 @@ export const ClientResults = () => {
             <div className="flex items-center justify-start min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%] lg:w-[80%] bg-cover bg-center bg-gelik lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="hidden md:block md:w-[70%] lg:block lg:w-[70%]"></div>
               <div className="p-8 rounded-lg shadow-lg text-white md:max-w-full lg:w-full">
-                <h2 className="text-2xl font-bold mb-4">{t("Пригон элитных авто")}</h2>
-                <p className="mb-8">{t("Пригон элитных автомобилей под заказ")}</p>
+                <h2 className="text-2xl font-bold mb-4">
+                  {t("Пригон элитных авто")}
+                </h2>
+                <p className="mb-8">
+                  {t("Пригон элитных автомобилей под заказ")}
+                </p>
                 <div className="md:flex lg:flex items-start justify-between py-2">
                   <div className="md:py-2 lg:py-2">
                     <p className="text-xl font-semibold">2800$</p>
@@ -47,7 +51,7 @@ export const ClientResults = () => {
                   </div>
                 </div>
                 <button className="px-6 py-2 border-2 rounded-[24px] hover:hover:text-blue-700 hover:border-blue-700">
-                <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
+                  <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
                 </button>
               </div>
             </div>
@@ -55,7 +59,9 @@ export const ClientResults = () => {
           <div className="flex items-center justify-center lg:justify-end mt-20">
             <div className="flex items-center justify-start min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%]  lg:w-[80%] bg-cover bg-center bg-subbit lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="p-8 rounded-lg shadow-lg text-white  md:max-w-full lg:w-full">
-                <h2 className="text-2xl font-bold mb-4">{t("Realty Summit")}</h2>
+                <h2 className="text-2xl font-bold mb-4">
+                  {t("Realty Summit")}
+                </h2>
                 <p className="mb-8">{t("Продажа билетов на саммит.")}</p>
                 <div className="md:flex lg:flex items-start justify-between py-2">
                   <div className="md:py-2 lg:py-2">
@@ -72,7 +78,7 @@ export const ClientResults = () => {
                   </div>
                 </div>
                 <button className="px-6 py-2 border-2 rounded-[24px] hover:hover:text-blue-700 hover:border-blue-700">
-                <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
+                  <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
                 </button>
               </div>
               <div className="hidden md:block md:w-[70%] lg:block lg:w-[70%]"></div>
@@ -85,7 +91,9 @@ export const ClientResults = () => {
             <div className="flex items-center justify-start min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%]  lg:w-[80%] bg-cover bg-center bg-chevrolet lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="hidden md:block md:w-[70%] lg:block lg:w-[70%]"></div>
               <div className="p-8 rounded-lg shadow-lg text-white md:max-w-full lg:w-full">
-                <h2 className="text-2xl font-bold mb-4">{t("Пригон авто из США")}</h2>
+                <h2 className="text-2xl font-bold mb-4">
+                  {t("Пригон авто из США")}
+                </h2>
                 <p className="mb-8">{t("Пригон автомобилей под заказ")}</p>
                 <div className="md:flex lg:flex items-start justify-between py-2">
                   <div className="py-5 md:py-2 lg:py-2">
@@ -102,13 +110,15 @@ export const ClientResults = () => {
                   </div>
                 </div>
                 <button className="px-6 py-2 border-2 rounded-[24px] hover:hover:text-blue-700 hover:border-blue-700">
-                <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
+                  <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center lg:justify-end
-           mt-20">
+          <div
+            className="flex items-center justify-center lg:justify-end
+           mt-20"
+          >
             <div className="flex items-center justify-start min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%] lg:w-[80%] bg-cover bg-center bg-houses lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="p-8 rounded-lg shadow-lg text-white  md:max-w-full lg:w-full">
                 <h2 className="text-2xl font-bold mb-4">TOWNHOUSE</h2>
@@ -128,7 +138,7 @@ export const ClientResults = () => {
                   </div>
                 </div>
                 <button className="px-6 py-2 border-2 rounded-[24px] hover:hover:text-blue-700 hover:border-blue-700">
-                <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
+                  <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
                 </button>
               </div>
               <div className="hidden md:block md:w-[70%] lg:block lg:w-[70%]"></div>
@@ -141,8 +151,14 @@ export const ClientResults = () => {
             <div className="flex items-center justify-center min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%] lg:w-[80%] bg-cover bg-center bg-kinder lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="hidden md:block md:w-[70%] lg:block lg:w-[70%]"></div>
               <div className="p-8 rounded-lg shadow-lg text-white md:max-w-full lg:w-full">
-                <h2 className="text-2xl font-bold mb-4">{t("Большие киндеры")}</h2>
-                <p className="mb-8">{t("Привлечение клиентов покупку больших подарочных киндеров")}</p>
+                <h2 className="text-2xl font-bold mb-4">
+                  {t("Большие киндеры")}
+                </h2>
+                <p className="mb-8">
+                  {t(
+                    "Привлечение клиентов покупку больших подарочных киндеров"
+                  )}
+                </p>
                 <div className="md:flex lg:flex items-start justify-between py-2">
                   <div className="md:py-2 lg:py-2">
                     <p className="text-xl font-semibold">1200</p>
@@ -158,7 +174,7 @@ export const ClientResults = () => {
                   </div>
                 </div>
                 <button className="px-6 py-2 border-2 rounded-[24px] hover:hover:text-blue-700 hover:border-blue-700">
-                <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
+                  <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
                 </button>
               </div>
             </div>
@@ -166,8 +182,12 @@ export const ClientResults = () => {
           <div className="flex items-center justify-center lg:justify-end mt-20">
             <div className="flex items-center justify-center min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%] lg:w-[80%] bg-cover bg-center bg-tree lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="p-8 rounded-lg shadow-lg text-white md:max-w-full lg:w-full">
-                <h2 className="text-2xl font-bold mb-4">{t("Продажа елок в США")}</h2>
-                <p className="mb-8">{t("Продажа дизайнерских деревянных елок на территории США")}</p>
+                <h2 className="text-2xl font-bold mb-4">
+                  {t("Продажа елок в США")}
+                </h2>
+                <p className="mb-8">
+                  {t("Продажа дизайнерских деревянных елок на территории США")}
+                </p>
                 <div className="md:flex lg:flex items-start justify-between py-2">
                   <div className="md:py-2 lg:py-2">
                     <p className="text-xl font-semibold">15000$</p>
@@ -183,7 +203,7 @@ export const ClientResults = () => {
                   </div>
                 </div>
                 <button className="px-6 py-2 border-2 rounded-[24px] hover:hover:text-blue-700 hover:border-blue-700">
-                <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
+                  <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
                 </button>
               </div>
               <div className="hidden md:block md:w-[70%] lg:block lg:w-[70%]"></div>
@@ -196,8 +216,14 @@ export const ClientResults = () => {
             <div className="flex items-center justify-center min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%] lg:w-[80%] bg-cover bg-center bg-plane lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="hidden md:block md:w-[70%] lg:block lg:w-[70%]"></div>
               <div className="p-8 rounded-lg shadow-lg text-white md:max-w-full">
-                <h2 className="text-2xl font-bold mb-4">{t("Авиационный центр в Латвии")}</h2>
-                <p className="mb-8">{t("Рекламная кампания была нацелен на привлечение абитуриентов на обучение профессии авиамеханик")}</p>
+                <h2 className="text-2xl font-bold mb-4">
+                  {t("Авиационный центр в Латвии")}
+                </h2>
+                <p className="mb-8">
+                  {t(
+                    "Рекламная кампания была нацелен на привлечение абитуриентов на обучение профессии авиамеханик"
+                  )}
+                </p>
                 <div className="md:flex lg:flex items-start justify-between py-2">
                   <div className="md:py-2 lg:py-2">
                     <p className="text-xl font-semibold">500</p>
@@ -213,7 +239,7 @@ export const ClientResults = () => {
                   </div>
                 </div>
                 <button className="px-6 py-2 border-2 rounded-[24px] hover:hover:text-blue-700 hover:border-blue-700">
-                <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
+                  <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
                 </button>
               </div>
             </div>
@@ -221,8 +247,14 @@ export const ClientResults = () => {
           <div className="flex items-center justify-center lg:justify-end mt-20">
             <div className="flex items-center justify-center min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%] lg:w-[80%] bg-cover bg-center bg-dishes lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="p-8 rounded-lg shadow-lg text-white md:max-w-full">
-                <h2 className="text-2xl font-bold mb-4">{t("Оптовая продажа экопосуды")}</h2>
-                <p className="mb-8">{t("Целью рекламной кампании было привлечение оптовых клиентов на покупок биоразлагаемой посуды")}</p>
+                <h2 className="text-2xl font-bold mb-4">
+                  {t("Оптовая продажа экопосуды")}
+                </h2>
+                <p className="mb-8">
+                  {t(
+                    "Целью рекламной кампании было привлечение оптовых клиентов на покупок биоразлагаемой посуды"
+                  )}
+                </p>
                 <div className="md:flex lg:flex items-start justify-between py-2">
                   <div className="md:py-2 lg:py-2">
                     <p className="text-xl font-semibold">1200</p>
@@ -238,7 +270,7 @@ export const ClientResults = () => {
                   </div>
                 </div>
                 <button className="px-6 py-2 border-2 rounded-[24px] hover:hover:text-blue-700 hover:border-blue-700">
-                <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
+                  <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
                 </button>
               </div>
 
@@ -252,8 +284,14 @@ export const ClientResults = () => {
             <div className="flex items-center justify-center min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%] lg:w-[80%] bg-cover bg-center bg-pansionat lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="hidden md:block md:w-[70%] lg:block lg:w-[70%]"></div>
               <div className="p-8 rounded-lg shadow-lg text-white md:max-w-full">
-                <h2 className="text-2xl font-bold mb-4">{t("Пансионат для престарелых")}</h2>
-                <p className="mb-8">{t("Привлечение клиентов для обслуживания их пожилых родственников")}</p>
+                <h2 className="text-2xl font-bold mb-4">
+                  {t("Пансионат для престарелых")}
+                </h2>
+                <p className="mb-8">
+                  {t(
+                    "Привлечение клиентов для обслуживания их пожилых родственников"
+                  )}
+                </p>
                 <div className="md:flex lg:flex items-start justify-between py-2">
                   <div className="md:py-2 lg:py-2">
                     <p className="text-xl font-semibold">122</p>
@@ -269,7 +307,7 @@ export const ClientResults = () => {
                   </div>
                 </div>
                 <button className="px-6 py-2 border-2 rounded-[24px] hover:hover:text-blue-700 hover:border-blue-700">
-                <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
+                  <a href="#contact">{t("ХОЧУ ТАК ЖЕ")}</a>
                 </button>
               </div>
             </div>
@@ -277,8 +315,14 @@ export const ClientResults = () => {
           <div className="flex items-center justify-center lg:justify-end mt-20">
             <div className="flex items-center justify-center min-w-[90%] max-w-[90%] md:min-w-[80%] md:max-w-[80%] lg:w-[80%] bg-cover bg-center bg-china lg:shadow-none hover:shadow-[0_35px_60px_-15px_rgba(1,1,1,1)]">
               <div className="p-8 rounded-lg shadow-lg text-white md:max-w-full">
-                <h2 className="text-2xl font-bold mb-4">{t("Бизнес с Китаем")}</h2>
-                <p className="mb-8">{t("Привлечение клиентов для для полного сопровождения бизнеса связанного с Китаем")}</p>
+                <h2 className="text-2xl font-bold mb-4">
+                  {t("Бизнес с Китаем")}
+                </h2>
+                <p className="mb-8">
+                  {t(
+                    "Привлечение клиентов для для полного сопровождения бизнеса связанного с Китаем"
+                  )}
+                </p>
                 <div className="md:flex lg:flex items-start justify-between py-2">
                   <div className="md:py-2 lg:py-2">
                     <p className="text-xl font-semibold">280</p>
@@ -305,4 +349,3 @@ export const ClientResults = () => {
     </div>
   );
 };
-

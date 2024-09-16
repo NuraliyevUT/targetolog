@@ -57,14 +57,14 @@ export const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-16 md:mt-20 lg:mt-32">
       <div className="container mb-10">
-        <div className="lg:flex justify-between items-center rounded-3xl">
+        <div className="flex flex-col lg:flex-row justify-between items-center rounded-3xl">
           <div className="w-full p-8">
             <div className="mb-20">
               <span className="text-3xl text-white font-sans font-bold max-w-lg md:text-7xl lg:text-7xl border-b-2 border-blue-700">
                 {t("Таргетолог")}
               </span>
               <h1 className="text-3xl text-white font-sans font-bold mb-10 mt-5 max-w-2xl md:text-7xl lg:text-7xl">
-                {t("Антон Вакуленко")}
+                {t("Игорь Иванов")}
               </h1>
               <div className="flex justify-between items-start">
                 <p className="text-base font-sans text-white max-w-lg lg:text-xl">
@@ -75,7 +75,7 @@ export const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center lg:min-h-[485px] ml-4 lg:max-w-[470px] bg-transparent lg:backdrop-brightness-50 px-4 lg:py-8 lg:px-14 mr-10 lg:border-2 border-blue-700">
+          <div className="flex flex-col items-center justify-center lg:min-h-[485px] ml-4 max-w-[470px] bg-transparent lg:backdrop-brightness-50 px-4 lg:py-8 lg:px-14 lg:border-2 border-blue-700">
             <h2 className="text-lg text-white lg:text-[24px] font-bold leading-10">
               {t("СТРАТЕГИЯ БЕСПЛАТНО")}
             </h2>
@@ -84,7 +84,12 @@ export const Hero = () => {
                 "Напишу стратегию по Таргетированной Рекламе для Вашей компании бесплатно и презентую ее!"
               )}
             </p>
-            <form id="myFormHero" action="" className="w-full" onSubmit={SendMessage}>
+            <form
+              id="myFormHero"
+              action=""
+              className="w-full"
+              onSubmit={SendMessage}
+            >
               <input
                 id="name"
                 type="text"
@@ -109,7 +114,7 @@ export const Hero = () => {
               </button>
             </form>
           </div>
-          
+
           <ToastContainer />
         </div>
       </div>

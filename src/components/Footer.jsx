@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
@@ -11,7 +11,14 @@ import { FaInstagram } from "react-icons/fa";
 
 export const Footer = () => {
   const { t, i18n } = useTranslation();
-  
+  const activeHandleChange = (event) => {
+    const selectedLanguage = event.target.value;
+    if (selectedLanguage !== i18n.language) {
+      i18n.changeLanguage(selectedLanguage);
+    }
+  };
+  const currentLanguage = i18n.language;
+
   const handleChange = (event) => {
     const selectedLanguage = event.target.value;
     i18n.changeLanguage(selectedLanguage);
@@ -76,22 +83,37 @@ export const Footer = () => {
               </h1>
               <div className="md:flex lg:flex justify-between items-center">
                 <div className="flex items-center justify-between text-5xl px-5">
-                  <a href="#" className="text-white p-2 hover:hover:text-blue-700">
+                  <a
+                    href="#"
+                    className="text-white p-2 hover:hover:text-blue-700"
+                  >
                     <FaWhatsapp />
                   </a>
-                  <a href="#" className="text-white p-2 hover:hover:text-blue-700">
+                  <a
+                    href="#"
+                    className="text-white p-2 hover:hover:text-blue-700"
+                  >
                     <FaTelegramPlane />
                   </a>
-                  <a href="#" className="text-white p-2 hover:hover:text-blue-700">
+                  <a
+                    href="#"
+                    className="text-white p-2 hover:hover:text-blue-700"
+                  >
                     <FaViber />
                   </a>
                 </div>
                 <div className="flex flex-col items-center justify-between text-2xl pt-10 md:pt-0 lg:pt-0 px-5 ">
-                  <a href="tel:+380986066667" className="text-white hover:hover:text-blue-700">
-                    +38(098) 606 66 67
+                  <a
+                    href="tel:+380986066667"
+                    className="text-white hover:hover:text-blue-700"
+                  >
+                    +38(000) 606 66 67
                   </a>
-                  <a href="tel:+380632409679" className="text-white hover:hover:text-blue-700">
-                    +38(063) 240 96 79
+                  <a
+                    href="tel:+380632409679"
+                    className="text-white hover:hover:text-blue-700"
+                  >
+                    +38(000) 240 96 79
                   </a>
                 </div>
               </div>
@@ -99,13 +121,19 @@ export const Footer = () => {
                 href="mailto:mailto:a.a.vakulenko@gmail.com"
                 className="text-white text-center block p-10 hover:hover:text-blue-700"
               >
-                a.a.vakulenko@gmail.com
+                a.a.ivanov@gmail.com
               </a>
               <div className="flex items-center justify-center text-4xl">
-                <a href="#" className="text-white mr-10 p-2 border-2 border-white rounded-full hover:hover:text-blue-700 hover:border-blue-700">
+                <a
+                  href="#"
+                  className="text-white mr-10 p-2 border-2 border-white rounded-full hover:hover:text-blue-700 hover:border-blue-700"
+                >
                   <IoLogoFacebook />
                 </a>
-                <a href="#" className="text-white p-2 border-2 border-white rounded-full hover:hover:text-blue-700 hover:border-blue-700">
+                <a
+                  href="#"
+                  className="text-white p-2 border-2 border-white rounded-full hover:hover:text-blue-700 hover:border-blue-700"
+                >
                   <FaInstagram />
                 </a>
               </div>
@@ -157,15 +185,29 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <button value="ru" onClick={handleChange} className="text-white p-5 md:p-10 lg:p-10 hover:text-blue-700">
+          <button
+            value="ru"
+            onClick={activeHandleChange}
+            className={`p-5 md:p-10 lg:p-10 hover:text-blue-700 ${
+              currentLanguage === "ru" ? "text-blue-700" : "text-white"
+            }`}
+          >
             RU
           </button>
-          <button value="uz" onClick={handleChange} className="text-white p-5 hover:text-blue-700">
+          <button
+            value="uz"
+            onClick={activeHandleChange}
+            className={`p-5 hover:text-blue-700 ${
+              currentLanguage === "uz" ? "text-blue-700" : "text-white"
+            }`}
+          >
             UZ
           </button>
         </div>
         <div className="text-white text-center">
-            <p>{t("@ 2015-2022. Все права защищены Политика Конфиденциальности")}</p>
+          <p>
+            {t("@ 2015-2023. Все права защищены Политика Конфиденциальности")}
+          </p>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import avatar from "../img/avatar.jpeg";
+import avatar from "../img/avatar.webp";
 import Slider from "@mui/material/Slider";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -23,7 +23,7 @@ export const Scoring = () => {
     const number = document.getElementById("number").value;
     const region = document.getElementById("region").value;
     const bill = document.getElementById("bill").value;
-    const clients = val;  // Using the state value directly
+    const clients = val; // Using the state value directly
     const message = `Name: ${name}\nNumber: ${number}\nRegion: ${region}\nBill: ${bill}\nClients: ${clients}`;
 
     axios({
